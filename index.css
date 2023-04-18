@@ -1,0 +1,54 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'menu header'
+    'menu content'
+    'footer footer';
+    grid-template-columns: 300px auto;
+}
+
+.content {
+    grid-area: content;
+}
+
+.animal_wrapper {
+    display: flex;
+    background-color: rgb(210, 180, 140);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-content {
+    text-decoration: none;
+    width: 300px;
+    height: 300px;
+    padding: 25px;
+    margin: 25px;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: rgb(58, 30, 5);
+    transition: 0.2s;
+    text-align: center;
+}
+
+.box-content:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.box-content b {
+    font-size: 1.17em;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+
+.box-content img {
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+
